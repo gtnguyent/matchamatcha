@@ -312,8 +312,42 @@ h3 {
         letter-spacing: 0.03em;
     }
 }
+/* mobile - home - 1 column */
+@media (max-width: 480px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
 
+    .hero-card--copy {
+        max-width: 100%;
+        padding: 2rem 1.5rem;
+    }
 
+    .hero-image-inner {
+    max-width: 100%;
+    }
+
+    .two-column {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .centered {
+        display: flex;
+        justify-content: center;
+    }
+
+}
 /* highlights current page */
 
 .nav a.active {
