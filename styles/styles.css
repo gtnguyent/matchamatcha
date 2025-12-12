@@ -1333,3 +1333,13 @@ body[data-page="result"] main {
     gap: 0.6rem 1rem;
   }
 }
+
+body[data-page="result"] p.centered {
+    display: block;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+body[data-page="result"] p.centered a {
+    white-space: nowrap;
+}
