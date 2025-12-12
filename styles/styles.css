@@ -770,7 +770,7 @@ h3 {
 
 /* filters */
 
-.catalog-filter {
+.catalog-filters {
     margin: 1.8rem 0 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -1345,17 +1345,17 @@ body[data-page="result"] .centered a {
 }
 
 @media (max-width: 520px) {
-    .catalog-filters {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
-        margin: 1.25rem 0 1rem;
-    }
+    body[data-page="catalog"] .catalog-filters {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.6rem;
+  }
 
-    .filter-btn {
-        padding: 0.4rem 0.6rem;
-        font-size: 0.7rem;
-        letter-spacing: 0.05em;
-        text-align: center;
-        white-space: nowrap;
-    }
+  body[data-page="catalog"] .catalog-filters .filter-btn {
+    width: 100%;
+    text-align: center;
+    white-space: normal;
+    line-height: 1.1;
+    padding: 0.55rem 0.75rem;
+    font-size: 0.72rem;
+  }
 }
