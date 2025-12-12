@@ -704,14 +704,18 @@ h3 {
 
 .filter-btn {
     border-radius: 999px;
-    border: 1px solid var(--cream);
+    border: 1px solid #bcc685;
     padding: 0.45rem 0.95rem;
     cursor: pointer;
+
     font-family: "Instrument Sans", system-ui, sans-serif;
     font-size: 0.8rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    background: #bcc685;
     color: var(--espresso-brown);
+
     transition: 
     background 0.12s ease,
     border-color 0.12s ease,
@@ -719,7 +723,7 @@ h3 {
 }
 
 .filter-btn:hover {
-    background: #f1e2d2;
+    background: var(--dusty-brown);
 
 }
 
@@ -737,6 +741,7 @@ body[data-page="quiz"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   /* Blue grid background */
   background-color: var(--blue);
@@ -747,12 +752,21 @@ body[data-page="quiz"] {
   background-position: center;
 }
 
+body:not([data-page="quiz"]) main {
+    flex: 1;
+}
 
 .quiz-page {
   width: 100%;
   padding: 3.5rem 1.5rem;
   display: flex;
   justify-content: center;
+}
+
+body[data-page="quiz"] .question-help {
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
+  color: var(--espresso-brown);
 }
 
 /* Smaller centered quiz card */
